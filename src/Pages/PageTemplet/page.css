@@ -1,0 +1,73 @@
+.Templet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.left {
+  position: relative;
+  border-radius: 10px;
+  width: 710px;
+  height: 1000px;
+  display: grid;
+  /* grid-template-rows: auto auto; */
+  justify-content: space-around;
+}
+.leftchild {
+  display: flex;
+  margin-top: 10px;
+  /* width: 680px; */
+  height: 250px;
+
+  justify-content: space-between;
+}
+.lefttext {
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(23, 142, 221);
+  font-size: large;
+}
+.para {
+  color: black;
+}
+.image {
+  width: 20rem;
+}
+.righttemplet {
+  position: relative;
+
+  border-radius: 10px;
+  width: 500px;
+  height: 900px;
+  grid-template-rows: auto;
+}
+.rightchild {
+  margin-top: 10px;
+  width: 490px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.imageright {
+  width: 15rem;
+}
+.righttext {
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(15, 113, 198);
+  font-size: x-large;
+}
+.india {
+  background-image: linear-gradient(45deg, #ed84ba78, transparent);
+}
+.anime {
+  background-image: linear-gradient(39deg, hsl(0deg 0% 100%), #d2c8e4);
+}
+.hollywood {
+  height: 1400px;
+  background-image: linear-gradient(45deg, #c19696, transparent);
+}
+.technology {
+  background-image: linear-gradient(45deg, #cde9c7c2, #daff3b78);
+}
+.games {
+}

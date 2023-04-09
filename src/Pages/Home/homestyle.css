@@ -1,0 +1,203 @@
+.home {
+  margin: 40px;
+  margin-top: 10px;
+}
+
+.hometop {
+  filter: drop-shadow(10px 10px 5px gray);
+  font-size: xx-large;
+  color: chartreuse;
+  border-radius: 10px;
+  width: 720px;
+  height: 420px;
+  background-image: url(../Home/trekking1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image-width: 10px;
+}
+.homeright {
+  width: 600px;
+  height: 420px;
+  float: right;
+  display: grid;
+  grid-template-rows: auto;
+  /* background-image: url(../Home/Trekking2.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image-width: 10px;
+}
+.rigth {
+  filter: drop-shadow(10px 10px 5px gray);
+  margin-top: 3px;
+  border-radius: 10px;
+  width: 540px;
+  height: 210px;
+  background-image: url(../Home/Trekking2.jpeg);
+  background-size: cover;
+  background-repeat: round;
+}
+.right2 {
+  filter: drop-shadow(10px 10px 5px gray);
+  border-radius: 10px;
+  width: 540px;
+  height: 210px;
+  background-image: url(../Home/trekking3.jpeg);
+  background-size: inherit;
+  background-repeat: round;
+  border-image-width: 10px;
+}
+.homedown {
+  position: relative;
+
+  border-radius: 10px;
+  width: 1400px;
+  /* height: 800px; */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.latesbox {
+  animation-timing-function: linear;
+  animation-duration: 1second;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  filter: drop-shadow(10px 10px 5px gray);
+  border-radius: 10px;
+  margin: 10px;
+  display: grid;
+}
+.latest {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  margin: 10px;
+}
+.image {
+  width: 30px;
+}
+.articles {
+  display: flex;
+  /* float: left; */
+  margin: 10px;
+  width: 1000px;
+
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add {
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+  /* margin-left: 1050px; */
+  position: absolute;
+  top: 500px;
+  right: 10px;
+  animation-name: add;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.addtext {
+  position: absolute;
+  animation-name: addtext;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes addtext {
+  0% {
+    top: 0px;
+    left: 40px;
+  }
+  35% {
+    top: 100px;
+    left: 30px;
+  }
+  70% {
+    top: 300px;
+    left: 10px;
+  }
+  100% {
+    top: 480px;
+  }
+}
+
+@keyframes add {
+  0% {
+    background-color: white;
+  }
+  35% {
+    background-color: aqua;
+  }
+  70% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.image {
+  width: 10rem;
+  height: 13rem;
+  filter: drop-shadow(10px 10px 5px gray);
+  border-radius: 10px;
+}
+.latesttext {
+  position: absolute;
+  font-style: italic;
+  font-size: xx-large;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.articletext {
+  font-style: italic;
+  font-size: xx-large;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: red;
+  display: flex;
+}
+.articlebox {
+  display: flex;
+}
+.articleslide {
+  display: contents;
+  font-size: x-large;
+}
+.articleimage {
+  width: 13rem;
+  height: 13rem;
+  filter: drop-shadow(10px 10px 5px gray);
+  border-radius: 10px;
+}
+/* .hr {
+  height: 1px;
+  border-style: groove;
+  width: 1000px;
+  margin-left: 10px;
+} */
+.storybox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stories {
+  display: flex;
+  justify-content: space-around;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+}
