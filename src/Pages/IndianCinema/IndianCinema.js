@@ -23,10 +23,10 @@ function IndianCinema() {
             </div>
             <br></br>
             <hr></hr>
-            <footer> <pre>--React Blob Project
+            <footer> <span>--React Blob Project
               @Rights reserved by Praveen Chandra Ravuri
                                        Prepbytes Coaching Acedamy --
-            </pre></footer>
+            </span></footer>
         </div>
     );
 }

@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import Head from "../../Components/HeaderComponent/Head";
-
-import "./homestyle.css";
 import { DataBlog } from "../../DataContext/Object";
+import "./homestyle.css";
 
 const Home = () => {
   const [dataValue] = useContext(DataBlog);
@@ -15,12 +14,14 @@ const scrollToTop = () => {
 
     return (
         <>
-            <div>
+            <div className="total">
                  <Head />
                 <h1>Home</h1>
          <div className="home">
                       <div className="homeright">
-                        
+                            <div className="hometop">
+                      ADVENTURE
+                 </div>
                         <div className="rigth">
                             MOUNTAINS
                             
@@ -28,11 +29,10 @@ const scrollToTop = () => {
                           <br></br>
                  <div className="right2">
                                GREENARY
-                        </div>
+              </div>
+                 
                     </div>
-                    <div className="hometop">
-                      ADVENTURE
-                 </div>
+             
                   
                    <br></br>
                      <hr></hr>
@@ -62,9 +62,10 @@ const scrollToTop = () => {
                 }
             
               </div>
-             <hr style={{width:"1300px"}}></hr>
+            
+             <hr style={{width:"100%"}}></hr>
                       <span className="articletext">Latest Article</span><br></br>
-             
+               <div className="Thearticles">
               <div className="articles">
                              {
                            dataValue?.filter((item) => item.category === "indianCinema").map((item,index) => {
@@ -97,7 +98,8 @@ const scrollToTop = () => {
                 <span className="addtext"> Advertisement</span></div>
                   </div>
             </div>
-          <div>
+            </div>
+          <div className="home2">
             <h2>Latest Stories</h2>
             <div className="stories">
               {dataValue.filter((item) => item.category === "technology").map((item,index) => {
@@ -117,10 +119,10 @@ const scrollToTop = () => {
             <button onClick={scrollToTop} className="back-to-top">^Go-top^</button>
             <br></br>
             <hr></hr>
-            <footer> <pre>--React Blob Project
+            <footer> <span>--React Blob Project
               @Rights reserved by Praveen Chandra Ravuri
-                                       Prepbytes Coaching Acedamy --
-            </pre></footer>
+                                       prepbytes Coaching Acedamy --
+            </span></footer>
                  </div>
         </div>
         </>

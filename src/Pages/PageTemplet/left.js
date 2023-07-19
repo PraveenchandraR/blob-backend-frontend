@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-
-import "./page.css";
 import { DataBlog } from "../../DataContext/Object";
+import "./page.css";
 function Lefttemplet() {
     const [dataValue]=useContext(DataBlog)
     return (

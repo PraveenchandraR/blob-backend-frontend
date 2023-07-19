@@ -1,7 +1,7 @@
-.home {
+/* .home {
   margin: 40px;
   margin-top: 10px;
-}
+} */
 
 .hometop {
   filter: drop-shadow(10px 10px 5px gray);
@@ -9,18 +9,20 @@
   color: chartreuse;
   border-radius: 10px;
   width: 720px;
-  height: 420px;
+  grid-row-start: 1;
+  grid-row-end: 4;
   background-image: url(../Home/trekking1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   border-image-width: 10px;
 }
 .homeright {
-  width: 600px;
-  height: 420px;
+  grid-template-columns: 1fr 1fr;
   float: right;
   display: grid;
   grid-template-rows: auto;
+  position: relative;
+  width: 100%;
   /* background-image: url(../Home/Trekking2.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +32,7 @@
   filter: drop-shadow(10px 10px 5px gray);
   margin-top: 3px;
   border-radius: 10px;
-  width: 540px;
+
   height: 210px;
   background-image: url(../Home/Trekking2.jpeg);
   background-size: cover;
@@ -39,7 +41,7 @@
 .right2 {
   filter: drop-shadow(10px 10px 5px gray);
   border-radius: 10px;
-  width: 540px;
+
   height: 210px;
   background-image: url(../Home/trekking3.jpeg);
   background-size: inherit;
@@ -48,15 +50,15 @@
 }
 .homedown {
   position: relative;
-
+  width: 100%;
   border-radius: 10px;
-  width: 1400px;
+  /* width: 1400px; */
   /* height: 800px; */
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
 }
-.latesbox {
+/* .latesbox {
   animation-timing-function: linear;
   animation-duration: 1second;
   position: relative;
@@ -66,13 +68,23 @@
   border-radius: 10px;
   margin: 10px;
   display: grid;
+} */
+.latestbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }
 .latest {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  height: 250px;
+
   margin: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .image {
   width: 30px;
@@ -81,19 +93,25 @@
   display: flex;
   /* float: left; */
   margin: 10px;
-  width: 1000px;
+  width: 950px;
 
   flex-direction: column;
   align-items: flex-start;
 }
-
+.Thearticles {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .add {
   border: 1px solid black;
   width: 300px;
   height: 500px;
   /* margin-left: 1050px; */
   position: absolute;
-  top: 500px;
+  /* top: 500px; */
   right: 10px;
   animation-name: add;
   animation-duration: 3s;
@@ -140,13 +158,13 @@
 }
 
 .image {
-  width: 10rem;
+  width: 100%;
   height: 13rem;
   filter: drop-shadow(10px 10px 5px gray);
   border-radius: 10px;
 }
 .latesttext {
-  position: absolute;
+  /* position: absolute; */
   font-style: italic;
   font-size: xx-large;
   font-weight: 400;
@@ -159,14 +177,17 @@
   font-weight: 400;
   text-decoration: underline;
   text-decoration-color: red;
-  display: flex;
 }
 .articlebox {
   display: flex;
 }
 .articleslide {
+  position: relative;
   display: contents;
   font-size: x-large;
+  width: 900px;
+  height: 700px;
+  border: 1px solid black;
 }
 .articleimage {
   width: 13rem;
@@ -200,4 +221,87 @@
   border-radius: 100px;
   border: none;
   box-shadow: 0 5px 10px #ccc;
+}
+@media only screen and (min-width: 350px) and (max-width: 900px) {
+  .homeright {
+    display: grid;
+  }
+  .total {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .hometop,
+  .right,
+  .right2 {
+    position: relative;
+    width: auto;
+  }
+  .latest {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .homedown {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .Thearticles {
+    display: flex;
+    width: 100%;
+  }
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .add {
+    display: none;
+  }
+  .articleslide {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .articlebox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .articleslide p {
+    width: min-content;
+  }
+  .stories {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .back-to-top {
+    display: none;
+  }
+  .home2 {
+    position: relative;
+    width: 100%;
+  }
 }
